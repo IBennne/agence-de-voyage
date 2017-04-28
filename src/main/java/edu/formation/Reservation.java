@@ -20,4 +20,44 @@ public class Reservation
 		this.numero = numero;
 		this.date = date;
 	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public int getNumero() {
+		return numero;
+	}
+
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
+
+	public Date getDate() {
+		return date;
+	}
+
+	public void setDate(Date date) {
+		this.date = date;
+	}
+
+	public EtatReservation getEtat() {
+		return etat;
+	}
+
+	public void setEtat(EtatReservation etat) {
+		this.etat = etat;
+	}
+
+	public static int getNbReservation() {
+		return nbReservation;
+	}
+
+	public static void setNbReservation(int nbReservation) {
+		Reservation.nbReservation = nbReservation;
+	}
 }
