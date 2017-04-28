@@ -9,7 +9,16 @@ public class Reservation
 	private int numero;
 	private Date date;
 	private EtatReservation etat;
+	private Passager passager;
 	
+	public Passager getPassager() {
+		return passager;
+	}
+
+	public void setPassager(Passager passager) {
+		this.passager = passager;
+	}
+
 	//pour incrémenter une nouvelle reservation
 	public static int nbReservation=0;
 	

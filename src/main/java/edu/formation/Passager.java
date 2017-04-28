@@ -1,6 +1,7 @@
 package edu.formation;
 
-public class Passager {
+public class Passager 
+{
 	
 	private int id;
 	private String nom;
@@ -15,8 +16,14 @@ public class Passager {
 		this.id = ++nbPassager;
 		this.nom = nom;
 		this.prenom = prenom;
+		
 	}
-	
+	public Passager(int id,String nom, String prenom) {
+		this.id = id;
+		this.nom = nom;
+		this.prenom = prenom;
+		
+	}
 	
 	public int getId() {
 		return id;

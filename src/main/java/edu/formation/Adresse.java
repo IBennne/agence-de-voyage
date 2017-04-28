@@ -1,17 +1,29 @@
 package edu.formation;
 
-public class Adresse {
+public class Adresse 
+{
 	
 	private String adresse;
 	private String codePostal;
 	private String ville;
 	private String pays;
-	private Passager passager;
+	
+
+	//private Passager passager;
+	private int idAdre;
 	
 	
 	
 	public Adresse(String adresse, String codePostal, String ville, String pays) {
 		
+		this.adresse = adresse;
+		this.codePostal = codePostal;
+		this.ville = ville;
+		this.pays = pays;
+	}
+public Adresse(String adresse, String codePostal, String ville, String pays, int idAdre) {
+		
+		this.idAdre=idAdre;
 		this.adresse = adresse;
 		this.codePostal = codePostal;
 		this.ville = ville;
@@ -43,13 +55,12 @@ public class Adresse {
 		this.pays = pays;
 	}
 
-	public Passager getPassager() {
-		return passager;
-	}
-
-	public void setPassager(Passager passager) {
-		this.passager = passager;
-	}
 	
+	public int getIdAdre() {
+		return idAdre;
+	}
+	public void setIdAdre(int idAdre) {
+		this.idAdre = idAdre;
+	}
 	
 }
